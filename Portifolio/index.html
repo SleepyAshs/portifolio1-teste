@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/05886f8e85.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="imagens/logo3.png" class="logo">
+                <ul id="menudolado">
+                    <li><a href="#header">Inicio</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Servicos</a></li>
+                    <li><a href="#portifolio">Portifolio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <i class="fa-solid fa-xmark" onclick="fecharmenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="abrirmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Desenvolvedor de Jogos</p>
+                <h1>Ola, Me chamo <span>Lucas</span><br></h1>
+            </div>
+        </div>
+    </div>
+    <div id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="sobre-1">
+                    <img src="imagens/user.png">
+                </div>
+                <div class="sobre-2">
+                    <h1 class="desc">Sobre mim</h1>
+                    <p>Sou Desenvolvedor de jogos de Ação e aventura (RPG no geral), e o jogo xxxx foi desenvolvido por mim e minha empresa, trabalhamos arduamente para obter
+                         o melhor conteudo entre o mercado. Buscando sempre evoluir em questao de mecanica e graficamente.</p>
+                     
+                        <div class="tab-titles">
+                            <p class="tab-links ativar-link" onclick="opentab('habilidades')">Habilidades</p>
+                            <p class="tab-links" onclick="opentab('experiencia')">Experiencia</p>
+                            <p class="tab-links" onclick="opentab('formacao')">Formação</p>
+                        </div>    
+                        <div class="tab-conteudo ativar-tab" id="habilidades">
+                            <ul>
+                                <li><span>UI/UX</span><br>Desenvolvedor Web/App Interfaces</li>
+                                <li><span>Desenvolvedor Web</span><br></li>
+                                <li><span>Desenvolvedor de App</span><br>Android/IOS apps</li>
+                                <li><span>Unreal Engine 5</span><br></li>
+                                <li><span>Unity Engine</span><br></li>
+                            </ul>
+                        </div>
+                        <div class="tab-conteudo" id="experiencia">
+                            <ul>
+                                <li><span>2018 - 2019</span><br>Nortcon Gamer</li>
+                                <li><span>2019 - 2021</span><br>Ubisoft</li>
+                                <li><span>2021 - Atualmente</span><br>Gamescon</li>
+                            </ul>
+                        </div>
+                        <div class="tab-conteudo" id="formacao">
+                            <ul>
+                                <li><span>2015</span><br>Cesupa</li>
+                                <li><span>2018</span><br>Trainee in Nortcon</li>
+                                
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="servicos">
+        <div class="container">
+            <h1 class="desc">Meus Serviços</h1>
+            <div class="servicos-lista">
+                <div>
+                    <h2>Web Design</h2>
+                    <a href="#">Veja mais</a>
+                </div>
+                <div>
+                    <h2>UI/UX</h2>
+                    <a href="#">Veja mais</a>
+                </div>
+                <div>
+                    <h2>Unreal Engine</h2>
+                    <a href="#">Veja mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portifolio">
+        <div class="container">
+            <h1 class="desc">Meus trabalhos</h1>
+            <div class="trabalhos-lista">
+                <div class="trabalho">
+                    <img src="imagens/trabalho1.webp">
+                    <div class="layer">
+                        <h3>Bloodborne</h3>
+                        <p>Bloodborne tem lugar em Yharnam, uma cidade gótica/vitoriana e em ruínas, onde segundo os rumores,
+                        alberga um poderoso medicamento.</p>
+                    </div>
+                </div>
+                <div class="trabalho">
+                    <img src="imagens/trabalho2">
+                    <div class="layer">
+                        <h3>Sekiro</h3>
+                        <p>O jogo se passa em uma versão mágica e fictícia do período Sengoku no Japão,
+                         e segue um shinobi que tenta se vingar de um clã samurai que o atacou e sequestrou seu lorde.</p>
+                    </div>
+                </div>
+                <div class="trabalho">
+                    <img src="imagens/trabalho3.jpg">
+                    <div class="layer">
+                        <h3>Elden Ring</h3>
+                        <p>Nas Terras Intermédias, governadas pela Rainha Marika,
+                         o Elden Ring, a fonte da Térvore, foi destruído.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">Veja mais</a>
+        </div>
+    </div>
+
+    <div id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="contato-1">
+                    <h1 class="sub">Me contate</h1>
+                    <p>kleyson20070024@aluno.cesupa.br</p>
+                    <p>9199984849</p>
+                </div>
+                <div class="contato-2">
+                    <form>
+                        <input type="text" name="Nome" placeholder="Seu Nome" required>
+                        <input type="email" name="email" placeholder="Seu Email" required>
+                        <textarea name="Mensagem" rows="6" placeholder="Sua mensagem"></textarea>
+                        <button type="submit" class="btn btn2">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabconteudos = document.getElementsByClassName("tab-conteudo")
+        
+        function opentab(tabnome){
+            for(tablink of tablinks){
+                tablink.classList.remove("ativar-link")
+            }
+            for(tabconteudo of tabconteudos){
+                tabconteudo.classList.remove("ativar-tab")
+            }
+            event.currentTarget.classList.add("ativar-link")
+            document.getElementById(tabnome).classList.add("ativar-tab")
+            
+        }
+    </script>
+
+    <script>
+
+        var menulado = document.getElementById("menudolado");
+
+        function abrirmenu(){
+            menulado.style.right = "0";
+        }
+        function fecharmenu(){
+            menulado.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
